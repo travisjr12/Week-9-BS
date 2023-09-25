@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <!--we are linking are bootstrap styled css to make it possible to render my page-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+         .navbar a {
+      text-decoration: none;
+      color: orange;
+    }
+     
+    </style>
+</head>
+<body>
+    <!--same as bootstrap.css page nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="bootStrap.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="pageTwo.html">Cool Pictures</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <h1>Cool Pictures</h1>
+    
+    
+    
+    <h1></h1>
+    <!--this tables class shows its functionality when hovered and is bordered inbetween i inserted pictures in the table rows-->
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Some photos i like</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6qkr7pWVPLBXsMVx6Wz1v-vIo7rlZyRmIg&usqp=CAU"></td>
+
+            </tr>
+            <tr>
+                <td><img src="https://srv-1.eden-gallery.com/2021/12/1/61a796482b1e6-Bulbasaur_-1.png"></td>
+            </tr>
+           
+        </tbody>
+    </table>
+<!--the form-group collects bootstrap info to render elements used in regular forms, the label is used for the name portion of the form the type attribute allows typing in the name area, similar for the email portion, and the button elements is rendered with bootstrap too primary is typically a blue tint -->
+    <form>
+        <p>If you want to see more pictures i like please send me your name and email</p>
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<!--same for bootStrap.html page-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

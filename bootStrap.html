@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--we are linking are bootstrap styled css to make it possible to render my page-->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<style>
+    .navbar a {
+      text-decoration: none;
+      color: orange;
+    }
+  .custom-container{
+    border-style: dashed;
+    border-color: aqua;
+    padding: 5px;
+    margin: 5px;
+  }
+  .custom-container-fluid {
+    border-style: dashed;
+    border-color: aqua;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  
+  
+</style>
+</head>
+<body>
+  <!--this uses bootstrap to style the navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <!--this container renders the bootstrap to fit specifically in size -->
+    <div class="container">
+      <a class="navbar-brand" href="bootStrap.html">Home</a>
+      <!--this references when the screen is minimized to collapse the items in the navbar where it brings up the button to click and unclick while expanding/minimizing the page-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="pageTwo.html">Cool Pictures</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <h1>Welcome</h1>
+    <p>click on "Cool Pictures" to look at some pictures i like .</p>
+ <!--this part of bootstrap that arranges the div into collumns in a horizontal row and when the screen is minimized it stacks on top of each other the container fluid is similar and takes on the parent container to render the collumns and rows-->   
+<div class="custom-container">
+  <div class="row">
+    <div class="col-sm">
+      1</div> 
+      <div class="col-sm">
+        2</div> 
+        <div class="col-sm">
+          3</div> 
+    </div>
+</div>
+  <div class="custom-container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        4</div> 
+        <div class="col-sm">
+          5</div> 
+          <div class="col-sm">
+            6</div> 
+      </div>
+</div>
+
+  <!--this is to refrence external content in the nodemodules including javascript and Bootstrap files that enables use of their components -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ 
+  
+</body>
+</html>
